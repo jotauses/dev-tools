@@ -21,7 +21,7 @@ Cross-platform development tools for Python and VSCode, with a modern graphical 
 
 ## Uninstallation
 
-To remove menu entries, icon and (optionally) the virtual environment:
+To remove menu entries, icon and the virtual environment:
 ```bash
 ./uninstall.sh
 ```
@@ -34,11 +34,6 @@ To remove menu entries, icon and (optionally) the virtual environment:
   ```
 - From the application menu: search for "Dev Tools".
 
-## Portability
-- No absolute paths or user references.
-- The launcher and .desktop work in any folder.
-- The icon is searched relative to the project or by name in the system.
-
 ## Features
 - Install/update VSCode (requires root only for that action)
 - Install Python versions
@@ -48,7 +43,3 @@ To remove menu entries, icon and (optionally) the virtual environment:
 ## Notes
 - For privileged actions, `pkexec` is used (must be installed and configured on your system).
 - Compatible with any user and Linux environment.
-
----
-
-Contributions and improvements are welcome.

@@ -14,7 +14,7 @@ Cross-platform development tools for Python and VSCode, with a modern graphical 
    ```
 2. Run the installer:
    ```bash
-   chmod +x install.sh uninstall.sh dev-tools-launcher.sh
+   chmod +x install.sh uninstall.sh launcher.sh
    ./install.sh
    ```
    This will create the virtual environment, install dependencies, the icon and the application menu entry.
@@ -30,7 +30,7 @@ To remove menu entries, icon and the virtual environment:
 
 - From terminal:
   ```bash
-  ./dev-tools-launcher.sh
+  ./launcher.sh
   ```
 - From the application menu: search for "Dev Tools".
 

@@ -8,7 +8,7 @@ ICON_SRC="$PROJECT_DIR/icon.png"
 ICON_DEST="$HOME/.local/share/icons/dev-tools.png"
 DESKTOP_SRC="$PROJECT_DIR/dev-tools.desktop"
 DESKTOP_DEST="$HOME/.local/share/applications/dev-tools.desktop"
-LAUNCHER_PATH="$PROJECT_DIR/dev-tools-launcher.sh"
+LAUNCHER_PATH="$PROJECT_DIR/launcher.sh"
 
 echo "Setting up Python virtual environment..."
 python3 -m venv "$PROJECT_DIR/.venv"
@@ -23,6 +23,6 @@ sed "s|^Exec=.*|Exec=$LAUNCHER_PATH|" "$DESKTOP_SRC" > "$DESKTOP_DEST"
 update-desktop-database "$HOME/.local/share/applications/"
 
 echo "Making launcher executable..."
-chmod +x "$PROJECT_DIR/dev-tools-launcher.sh"
+chmod +x "$PROJECT_DIR/launcher.sh"
 
 echo "Installation completed! You can now find Dev Tools in your application menu."

@@ -2,7 +2,7 @@
 Type=Application
 Name=Dev Tools
 Comment=Herramientas de desarrollo
-Exec=sh -c 'cd "$(dirname %k)" && ./dev-tools-launcher.sh'
+Exec=sh -c 'cd "$(dirname %k)" && ./launcher.sh'
 Icon=dev-tools
 Terminal=false
 Categories=Development;
